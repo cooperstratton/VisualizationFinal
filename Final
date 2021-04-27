@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Final Visualization</title>
+	
+	<link rel="stylesheet" href="../final_project/css/styles.css">
+	
+</head>
+
+<body>
+	
+	<nav>
+		<!--Make sure nav works -->	 
+		<a href="#Home">Home</a>
+		<a href="#About">About</a>
+		<a href="#Projects">Statistics</a>
+		<a href="#Contact">Contact</a>
+		 <!--link to my mock images of my cite, I went pretty basic, I figured it be more professional.-->
+		
+		<!--Had troubles understanding on how we had to turn our Mock images in and I added the link but it won't go back to the portfolio-->
+	</nav>
+	
+	
+	<section class="full" id="Home"> 
+		<div class="Callout"> 
+			<h1>Soccer Team Statistics</h1> <!--make sure title works-->
+			<p>Borussia Dortmund</p>
+	    <img src="images/1200px-Borussia_Dortmund_logo.svg.png" width="200" height="200" alt=""/> </div>
+	</section>
+	
+	<section class="sub"> <!--sub sections-->
+	
+	
+	</section>
+	
+	<section class="full" id="About">
+		<div class="Rollcall"> 
+			<h1>About</h1>
+			<p>Ballspielverein Borussia 09 e. V. Dortmund, commonly known as Borussia Dortmund, BVB, or simply Dortmund, is a German professional sports club based in Dortmund, North Rhine-Westphalia. The visuals for the three players shows what they contribute on a 100% scale. For Example some players have pass accuracy at 81% but it may say 31%. That 31% is what their overal performance out of 100%</p>
+		</div>
+		
+	</section>
+		
+	
+	<section class="sub">
+	</section>
+	
+	<section class="full" id="Projects">
+		<div class="SayHere">
+			<h1>Stats</h1>
+			<p>Top Players of the Team</p>
+		</div>
+		
+		<div class="imgContainer">
+		  <div class="box">
+			<img src="images/erling-haaland-borussia-dortmund.jpg" width="240" height="150" alt=""/>			
+			  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+<div id="piechart"></div>
+		
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Goals', 25],
+  ['Assits', 5],
+  ['Pass Accuracy', 72],
+  ['Shot Accuracy', 62],
+  ['Matches played', 26],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Erling Haaland', 'width':400, 'height':200};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script> 
+		  </div>
+			<div class="box2"><img src="images/reus.jpg" width="220" height="150" alt=""/>
+			
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+<div id="piechart2"></div>
+		
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Goals', 5],
+  ['Assits', 6],
+  ['Pass Accuracy', 81],
+  ['Shot Accuracy', 59],
+  ['Matches played', 29],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Marco Reus', 'width':400, 'height':200};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script> </div>
+			<div class="box3"> <img src="images/jadon.jpg" width="220" height="150" alt=""/>
+				
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+<div id="piechart3"></div>
+		
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Goals', 6],
+  ['Assits', 9],
+  ['Pass Accuracy', 82],
+  ['Touches per Game', 84],
+  ['Matches played', 23],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Jadon Sancho', 'width':400, 'height':200};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+  chart.draw(data, options);
+}
+</script>	
+				
+			</div>
+		</div>
+		
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+<!--<div id="piechart"></div>
+		
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Goals', 25],
+  ['Assits', 5],
+  ['Pass Accuracy', 72],
+  ['Shot Accuracy', 62],
+  ['Matches played', 26],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Erling Haaland', 'width':400, 'height':200};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script> -->
+		
+		<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+<div id="piechart2"></div>
+		
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Goals', 25],
+  ['Assits', 5],
+  ['Pass Accuracy', 72],
+  ['Shot Accuracy', 62],
+  ['Matches played', 26],
+
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Erling Haaland', 'width':400, 'height':200};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>-->
+		
+	</section>
+	
+	<section class="sub">
+	</section>
+	
+	<section class="full" id="Contact">
+		<div class="Attendence">
+			<h1>Contact</h1>
+			<p>Business Phone:</p> 
+				<p>555-555-5555</p>
+			<p>Business</p> 
+				<p>Email:crstratt@iu.edu</p>
+		</div>
+		
+		<div class="container">
+  <form action="../final_project - Copy/action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+		
+		
+	</section>
+	
+	<section class="sub">
+	
+	</section>
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
